@@ -15,5 +15,19 @@ address = "0xB8c77482e45F1F44dE1745F52C74426C631bDD52"
 
 contract = web3.eth.contract(address=address, abi=abi)
 print(contract, 'contract')
-total_supply = contract.functions.totalSupply().call()
-print(total_supply, 'total supply')
+all_functions = contract.functions
+print(all_functions, 'contract functions')
+
+#filter the blocks
+newest_blocks = web3.eth.filter('latest')
+print(newest_blocks, 'my latest blocks in the block chain')
+
+
+#net version
+
+net_version = web3.net.version
+print(net_version, 'net version')
+listening = web3.net.listening
+print(listening, 'listening')
+peer_count = web3.net.peer_count
+print(peer_count, 'peer count')
