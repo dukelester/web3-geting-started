@@ -1,5 +1,5 @@
 from web3 import Web3
-from settings  import Infura_config_url
+from sett.settings  import Infura_config_url
 
 #test connection to infura
 infura_web3 = Web3(Web3.HTTPProvider(Infura_config_url))
