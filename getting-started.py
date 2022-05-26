@@ -19,3 +19,7 @@ print(w3.isConnected(), 'Automatic connection')
 #not available locally of course
 my_block = my_web3.eth.getBlock('latest')
 print(my_block)
+
+#get the keys using the eth.accounts property
+my_keys = my_web3.eth.accounts
+print(my_keys)
